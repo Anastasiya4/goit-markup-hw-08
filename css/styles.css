@@ -193,14 +193,20 @@ b {
   margin-top: 90px;
 }
 
-.tools__tool {
+.tools__tool--settings,
+.tools__tool--safe,
+.tools__tool--net,
+.tools__tool--compass {
   text-align: center;
   align-items: center;
   margin-right: 30px;
   padding: 0;
 }
 
-.tools__tool:last-child {
+.tools__tool--settings:last-child,
+.tools__tool--safe:last-child,
+.tools__tool--net:last-child,
+.tools__tool--compass:last-child {
   margin-right: 0;
 }
 
@@ -213,7 +219,7 @@ b {
   margin-bottom: 30px;
 }
 
-.settings::before {
+.tools__tool--settings::before {
   display: inline-block;
   content: "";
   width: 90px;
@@ -223,7 +229,7 @@ b {
   background-size: contain;
 }
 
-.safe::before {
+.tools__tool--safe::before {
   display: inline-block;
   content: "";
   width: 90px;
@@ -233,7 +239,7 @@ b {
   background-size: contain;
 }
 
-.net::before {
+.tools__tool--net::before {
   display: inline-block;
   content: "";
   width: 90px;
@@ -243,7 +249,7 @@ b {
   background-size: contain;
 }
 
-.compass::before {
+.tools__tool--compass::before {
   display: inline-block;
   content: "";
   width: 90px;
@@ -425,20 +431,20 @@ img {
   border: 1px solid #ffffff;
 }
 
-.actions__like:hover {
+.actions--like:hover {
   background-color: var(--accent-color);
 }
-.actions__share:hover {
+.actions--share:hover {
   background-color: var(--img-color);
 }
-.actions__clock:hover {
+.actions--clock:hover {
   background-color: var(--hover-color);
 }
-.actions__basket:hover {
+.actions--basket:hover {
   background-color: var(--img-color);
 }
 
-.actions__like {
+.actions--like {
   margin: 0;
   padding: 0;
   width: 50px;
@@ -452,7 +458,7 @@ img {
   transition: background-color var(--time) var(--formula);
 }
 
-.actions__share {
+.actions--share {
   margin: 0;
   padding: 0;
   width: 50px;
@@ -466,7 +472,7 @@ img {
   transition: background-color var(--time) var(--formula);
 }
 
-.actions__clock {
+.actions--clock {
   margin: 0;
   padding: 0;
   width: 50px;
@@ -480,7 +486,7 @@ img {
   transition: background-color var(--time) var(--formula);
 }
 
-.actions__basket {
+.actions--basket {
   margin: 0;
   width: 164px;
   height: 50px;
@@ -493,7 +499,7 @@ img {
 
   transition: background-color var(--time) var(--formula);
 }
-.actions__basket::after {
+.actions--basket::after {
   content: "add to cart";
   color: var(--white-color);
   font-family: var(--font-2);
@@ -598,7 +604,7 @@ img {
   color: var(--grey-2-color);
 }
 
-.login-part__button {
+.login-part--button {
   position: absolute;
   top: 0;
   width: 89px;
